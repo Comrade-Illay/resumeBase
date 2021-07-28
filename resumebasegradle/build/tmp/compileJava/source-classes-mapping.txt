@@ -1,0 +1,32 @@
+resumebasegradle/net/illay/resumebase/advice/LoggingAdvice.java
+ resumebasegradle.net.illay.resumebase.advice.LoggingAdvice
+resumebasegradle/net/illay/resumebase/model/Resume.java
+ resumebasegradle.net.illay.resumebase.model.Resume
+resumebasegradle/net/illay/resumebase/rest/ResumeRestController.java
+ resumebasegradle.net.illay.resumebase.rest.ResumeRestController
+resumebasegradle/net/illay/resumebase/service/ResumeServiceImpl.java
+ resumebasegradle.net.illay.resumebase.service.ResumeServiceImpl
+resumebasegradle/net/illay/resumebase/exception/ApiError.java
+ resumebasegradle.net.illay.resumebase.exception.ApiError
+resumebasegradle/net/illay/resumebase/exception/MyEntityNotFoundException.java
+ resumebasegradle.net.illay.resumebase.exception.MyEntityNotFoundException
+resumebasegradle/net/illay/resumebase/ResumeApplication.java
+ resumebasegradle.net.illay.resumebase.ResumeApplication
+resumebasegradle/net/illay/resumebase/repository/ResumeRepository.java
+ resumebasegradle.net.illay.resumebase.repository.ResumeRepository
+resumebasegradle/net/illay/resumebase/service/ResumeService.java
+ resumebasegradle.net.illay.resumebase.service.ResumeService
+resumebasegradle/net/illay/resumebase/utils/MappingUtils.java
+ resumebasegradle.net.illay.resumebase.utils.MappingUtils
+resumebasegradle/net/illay/resumebase/dto/ResumeDtoOrBuilder.java
+ resumebasegradle.net.illay.resumebase.dto.ResumeDtoOrBuilder
+resumebasegradle/net/illay/resumebase/model/BaseEntity.java
+ resumebasegradle.net.illay.resumebase.model.BaseEntity
+resumebasegradle/net/illay/resumebase/exception/RestExceptionHandler.java
+ resumebasegradle.net.illay.resumebase.exception.RestExceptionHandler
+resumebasegradle/net/illay/resumebase/dto/ResumeDtoGenerated.java
+ resumebasegradle.net.illay.resumebase.dto.ResumeDtoGenerated
+resumebasegradle/net/illay/resumebase/dto/ResumeDto.java
+ resumebasegradle.net.illay.resumebase.dto.ResumeDto
+ resumebasegradle.net.illay.resumebase.dto.ResumeDto$1
+ resumebasegradle.net.illay.resumebase.dto.ResumeDto$Builder

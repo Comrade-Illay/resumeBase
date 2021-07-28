@@ -1,0 +1,38 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.3'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'net.illay'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_1_8
+}
+
+
+repositories {
+	mavenCentral()
+}
+
+ext {
+	set('springCloudVersion', "2020.0.0")
+}
+
+dependencies {
+    implementation 'org.springframework.cloud:spring-cloud-config-server'
+	testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.4.5'
+}
+
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}
+
+tasks.named('test', Test) {
+	useJUnitPlatform()
+}

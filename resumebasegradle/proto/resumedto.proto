@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package illay;
+
+option java_package = "resumebasegradle.net.illay.resumebase.dto";
+option java_outer_classname = "ResumeDtoGenerated";
+option java_multiple_files = true;
+
+message ResumeDto{
+
+	required uint64 id = 1;
+	required string name = 2;
+	required string surname = 3;
+	required string email = 4;
+	required string phoneNumber = 5;
+	required string skills = 6;
+	required string education = 7;
+	required string expirience = 8;
+}

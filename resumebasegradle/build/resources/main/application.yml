@@ -1,0 +1,57 @@
+logging:
+    level:
+       root: INFO
+server:
+    port: 9966
+    servlet:
+        context-path: ''
+        
+spring:
+  application: 
+    name: resumebase
+  profiles:
+    active:
+     test
+  jackson:
+        serialization:
+            fail-on-empty-beans: false
+  jpa:
+        database: mysql
+        database-platform: org.hibernate.dialect.MySQL5Dialect
+  mvc:
+        throw-exception-if-no-handler-found: true
+    
+  web:
+        resources:
+            add-mappings: false
+  cache:
+    ehcache:
+      config: classpath:ehcache.xml
+
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+--- 
+spring:  
+    profiles: prod
+    datasource:            
+        initialization-mode: always       
+        username: root
+        password: Everest8848
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3307/resumebase
+       
+   
+---
+spring:  
+    profiles: test
+    datasource:
+        schema: classpath*:database/initBD.sql
+        data: classpath*:database/populateDB.sql 
+        initialization-mode: always
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/resumebasetest
+        username: root
+        password: Everest8848  
+   
